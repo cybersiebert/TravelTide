@@ -130,6 +130,32 @@ Beispielhafte Segment-Zuordnung:
 | `Frequent Traveler` | Viel unterwegs, kein klares Muster         |
 | `Other`             | Sonstige Kombinationen                     |
 
+user_segment
+│
+├── avg_flight_seats ≤ 1
+│   ├── has_children = 0
+│   │   ├── married = 0
+│   │   │   ├── avg_session_duration_min ≤ 3
+│   │   │   │   ├── num_trips ≤ 4.9 → Business
+│   │   │   │   └── num_trips > 4.9 → Frequent Traveler
+│   │   │   └── avg_session_duration_min > 3
+│   │   │       ├── money_spent_hotel ≤ 1500 → Other
+│   │   │       └── money_spent_hotel > 1500 → Solo
+│   │   └── married = 1
+│   │       ├── num_trips ≤ 4.9
+│   │       │   ├── avg_flight_seats = 2 → Couple
+│   │       │   └── sonst → Frequent Traveler
+│   │       └── num_trips > 4.9 → Frequent Traveler
+│   └── has_children = 1
+│       ├── num_trips ≤ 4.9
+│       │   ├── avg_flight_seats ≤ 3 → Family
+│       │   └── sonst → Frequent Traveler
+│       └── num_trips > 4.9 → Frequent Traveler
+│
+└── avg_flight_seats > 1
+    ├── num_trips ≤ 5 → Groups
+    └── num_trips > 5 → Frequent Traveler
+
 
 Hier ist eine **erweiterte Segmentbeschreibung** für jedes deiner sieben Segmente – inklusive:
 

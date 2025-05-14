@@ -533,5 +533,4 @@ ORDER BY b.user_id;
 
 *Let's create a compelling, optimistic, and data-driven presentation that helps Elena confidently launch our personalized rewards program!*
 
-lass uns beginnen.
 

@@ -130,6 +130,111 @@ Beispielhafte Segment-Zuordnung:
 | `Frequent Traveler` | Viel unterwegs, kein klares Muster         |
 | `Other`             | Sonstige Kombinationen                     |
 
+
+Hier ist eine **erweiterte Segmentbeschreibung** für jedes deiner sieben Segmente – inklusive:
+
+* **Name (fiktiv, passend zum Profil)**
+* **Herkunft (Land/Region)**
+* **Beruf**
+* **Gender**
+* **Hobby**
+* **Story-basierter Text** für spätere Marketing-Texte oder Personalisierung
+
+---
+
+### 🧑‍💼 1. **Business**
+
+* **Name**: Jonas
+* **Herkunft**: Frankfurt, Deutschland
+* **Beruf**: IT-Consultant
+* **Gender**: Männlich
+* **Hobby**: Podcasts hören, schnelle Hotelbuchung
+* **Beschreibung**:
+
+  > Jonas ist ein vielbeschäftigter IT-Consultant aus Frankfurt. Er bucht oft kurzfristig Flüge für Kundentermine. Komfort und Effizienz sind ihm wichtiger als der Preis – besonders schätzt er schnelle Buchung und reibungslose Stornierungen.
+
+---
+
+### 🧳 2. **Solo**
+
+* **Name**: Lisa
+* **Herkunft**: Amsterdam, Niederlande
+* **Beruf**: UX-Designerin
+* **Gender**: Weiblich
+* **Hobby**: Alleinreisen, Yoga-Retreats
+* **Beschreibung**:
+
+  > Lisa ist eine kreative Einzelreisende. Sie liebt es, neue Orte allein zu entdecken und bevorzugt ruhige Unterkünfte mit flexibler Stornierung. Ihre Buchungen sind gut geplant, aber manchmal spontan.
+
+---
+
+### 👩‍❤️‍👨 3. **Couple**
+
+* **Name**: Matteo
+* **Herkunft**: Mailand, Italien
+* **Beruf**: Innenarchitekt
+* **Gender**: Männlich
+* **Hobby**: Boutique-Hotels entdecken mit seiner Frau
+* **Beschreibung**:
+
+  > Matteo reist gerne mit seiner Frau. Das Paar liebt stilvolle Hotels und verlängerte Wochenendtrips. Buchungen werden meist gemeinsam über das Tablet am Abend gemacht.
+
+---
+
+### 👨‍👩‍👧‍👦 4. **Family**
+
+* **Name**: Anna
+* **Herkunft**: Kopenhagen, Dänemark
+* **Beruf**: Grundschullehrerin
+* **Gender**: Weiblich
+* **Hobby**: Familienurlaube planen
+* **Beschreibung**:
+
+  > Anna reist mit ihrer Familie – zwei Kinder, ein voller Kalender. Sie sucht nach kinderfreundlichen Hotels und günstigen Flugpaketen. Frühbucherrabatte und kostenfreie Stornierung sind ihr besonders wichtig.
+
+---
+
+### 🧑‍🤝‍🧑 5. **Groups**
+
+* **Name**: Karim
+* **Herkunft**: Brüssel, Belgien
+* **Beruf**: Eventmanager
+* **Gender**: Männlich
+* **Hobby**: Gruppenreisen organisieren
+* **Beschreibung**:
+
+  > Karim plant regelmäßig Gruppenreisen für Freundeskreise oder Firmen. Ihm ist wichtig, mehrere Buchungen effizient zu verwalten. Rabatte für Gruppen und übersichtliche Buchungsprozesse überzeugen ihn.
+
+---
+
+### ✈️ 6. **Frequent Traveler**
+
+* **Name**: Emily
+* **Herkunft**: New York City, USA
+* **Beruf**: Digital Nomad
+* **Gender**: Weiblich
+* **Hobby**: Städtereisen & Co-Working weltweit
+* **Beschreibung**:
+
+  > Emily lebt zwischen Flugtickets und Hotel-Lounges. Als digitale Nomadin nutzt sie TravelTide intensiv – ob für Business oder Freizeit. Ihr Reisestil ist schnell, flexibel, global.
+
+---
+
+### 🌀 7. **Other**
+
+* **Name**: Alex
+* **Herkunft**: Prag, Tschechien
+* **Beruf**: Freelancer
+* **Gender**: Divers
+* **Hobby**: Spontane Trips & Hidden Gems entdecken
+* **Beschreibung**:
+
+  > Alex fällt in kein festes Muster. Mal ist es ein Luxushotel, mal ein günstiger Flug in letzter Minute. Das Entscheidende ist Flexibilität – Alex klickt, wenn das Bauchgefühl stimmt.
+
+---
+
+Möchtest du daraus auch ein Tableau-Dashboard-Tooltip-Template machen? Oder eine exportierbare CSV-Tabelle für den Mailmerge?
+
 ---
 
 ## 🧾 Ergebnis

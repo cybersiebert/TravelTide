@@ -437,3 +437,101 @@ LEFT JOIN session_base sb ON sb.user_id = b.user_id
 WHERE t.num_trips IS NOT NULL
 ORDER BY b.user_id;
 
+# TravelTide Rewards Program Project Plan and Tableau Workbook Guide
+
+## 1. Projektübersicht
+
+**Ziel:** Basierend auf Session-, Flug- und Hoteldaten Verhaltensmarker für fünf Rewards-Perks identifizieren und jedem Kunden seinen wahrscheinlich favorisierten Perk zuzuordnen. Die Ergebnisse werden in einer Präsentation und einem Tableau-Workbook visualisiert und dokumentiert.
+**Zielpublikum:**
+
+* **Primär:** Elena Tarrant (Head of Marketing) – nicht-technisch, optimistisch und zukunftsorientiert
+* **Sekundär:** Technische Kolleg\:innen – detaillierte Kommentierung in SQL- und Python-Scripts, Dokumentation für Reproduzierbarkeit
+
+## 2. Projektstruktur und Deliverables
+
+| Deliverable               | Inhalt                                                                 | Format               | Tool                          |
+| ------------------------- | ---------------------------------------------------------------------- | -------------------- | ----------------------------- |
+| Executive Summary         | Kurz & prägnant: Ziele, Methodik, Kernergebnisse, Empfehlungen         | Markdown (README.md) | VSCode/GitHub                 |
+| Slide Deck                | 5-Minuten-Präsentation: max. 6 Folien (Intro, Key Results, Next Steps) | PPTX / Google Slides | PowerPoint bzw. Google Slides |
+| Tableau Workbook          | Interaktive Dashboards für Segmente & Perks                            | .twbx                | Tableau                       |
+| Jupyter Notebook          | Analytische Schritte, SQL-Abfragen, Visualisierungsvorbereitung        | .ipynb               | Colab                         |
+| SQL Scripts               | Vollständige, kommentierte Abfragen                                    | .sql                 | Beekeeper                     |
+| CSV mit Segment-Zuordnung | Kundenliste mit zugeordneten Favoriten-Perks                           | .csv                 | Spreadsheet                   |
+| Vollständiges Repo        | Alle Dateien strukturiert im GitHub-Repository                         | GitHub Link          | GitHub                        |
+| Video Präsentation        | 5-Minuten-Video mit Storytelling und Insights                          | Loom / Zoom Link     | Video-Tool                    |
+
+## 3. Detaillierter Projektablauf
+
+### 3.1 Datenvorbereitung & -exploration
+
+1. **Daten laden** (TRAVELTIDE.csv) ins Spreadsheet & Colab
+2. **Daten prüfen**: Fehlende Werte, Schema, Duplicates
+3. **Datenbereinigung**: Outlier-Handling, Datentypkorrekturen, Cancellations entfernen
+4. **Feature-Engineering**: Berechne Recency, Frequency, Monetary, Session-Metriken, Lead Times
+5. **Dokumentation**: Kommentiere alle Schritte im Notebook und in SQL-Scripts
+
+### 3.2 Segmentierung & Perk-Analyse
+
+1. **RFM-Segmente und Decision Tree**: Übersetze den SQL-Case-Tree in Python-Pandas (optional)
+2. **Perks definieren**: Für jeden Nutzer anreichern, z. B. „most-likely free cancellation“, „free checked bag“
+3. **Validierung**: Statistische Tests oder Korrelationsanalysen, um Perk-Hypothesen zu prüfen
+4. **Zuweisungs-CSV**: Exportiere Kunden-Perk-Zuordnung als `customer_perks.csv`
+
+### 3.3 Dashboard-Design in Tableau
+
+1. **Datenquelle verbinden**: `customer_perks.csv` + Originaldaten in Tableau
+2. **Datenmodell**: Relationen (Customers, Sessions, Flights, Hotels)
+3. **Blätter erstellen**:
+
+   * **Segment-Übersicht**: Balkendiagramm Anzahl Users pro Segment
+   * **Perk-Präferenzen**: Kreisdiagramm relative Anteile pro Perk
+   * **Segment-Profile**: KPI-Karten (Avg. Trips, Avg. Spend, Lead Time)
+   * **Beispiel-Kunden**: Tabelle mit Top 10 Users, Perk, Segment
+4. **Dashboard zusammensetzen**: Single-Page Executive View + interaktives Detail-Dashboard
+5. **Story**: 5 Slides in Tableau Story-Modus (optional)
+
+### 3.4 Präsentation & Kommunikation
+
+1. **Executive Summary**: README.md erstellen, Abschnitt mit Visualisierung aus Tableau (Screenshot)
+2. **Slide Deck bauen**: 5 Folien, optimistisch und forward-looking:
+
+   * Folie 1: Kontext & Objectives
+   * Folie 2: Methodik (1–2 Sätze)
+   * Folie 3: Key Findings (Grafik + Bulletpoints)
+   * Folie 4: Empfehlung & Next Steps
+   * Folie 5: Dank & Kontakt
+3. **Video aufnehmen**: Max. 5 Minuten, klare Story, Fokus auf Business-Impact
+4. **GitHub-Repo strukturieren**:
+
+   ```
+   /README.md
+   /customer_perks.csv
+   /src/
+     analysis_notebook.ipynb
+     segmentation.sql
+   /tableau/
+     rewards_dashboard.twbx
+   /slides/
+     rewards_presentation.pptx
+   ```
+
+### 3.5 Technische Dokumentation & Reproduzierbarkeit
+
+* **SQL:** Kommentiere Entscheidungspunkte, CTEs im `segmentation.sql`
+* **Python-Notebook:** Markdown-Zellen für Erläuterungen, Verlinkung auf SQL-Files
+* **README.md:** Projektstruktur, Ausführungsanleitung (`pip install`, Pfade, typische Queries)
+
+## 4. Next Steps & Timeline
+
+* **Montag**: Datenexploration & -bereinigung abschließen
+* **Dienstag**: Segmentierung & Perk-Zuweisung finalisieren, `customer_perks.csv` exportieren
+* **Mittwoch**: Tableau-Dashboard entwickeln, Visuals gestalten
+* **Donnerstag**: Slide Deck & README finalisieren
+* **Freitag**: Video aufnehmen, alles in GitHub veröffentlichen, Abgabe bis 23:59h
+
+---
+
+*Let's create a compelling, optimistic, and data-driven presentation that helps Elena confidently launch our personalized rewards program!*
+
+lass uns beginnen.
+

@@ -171,33 +171,33 @@ Hier ist eine **erweiterte Segmentbeschreibung** für jedes deiner sieben Segmen
 ### 🧑‍💼 1. **Business**
 
 * **Name**: Jonas
-* **Herkunft**: Frankfurt, Deutschland
+* **Herkunft**: San Jose, USA
 * **Beruf**: IT-Consultant
 * **Gender**: Männlich
 * **Hobby**: Podcasts hören, schnelle Hotelbuchung
 * **Beschreibung**:
 
-  > Jonas ist ein vielbeschäftigter IT-Consultant aus Frankfurt. Er bucht oft kurzfristig Flüge für Kundentermine. Komfort und Effizienz sind ihm wichtiger als der Preis – besonders schätzt er schnelle Buchung und reibungslose Stornierungen.
+  > Jonas ist ein vielbeschäftigter IT-Consultant aus San Jose. Er bucht oft kurzfristig Flüge für Kundentermine. Komfort und Effizienz sind ihm wichtiger als der Preis – besonders schätzt er schnelle Buchung und reibungslose Stornierungen.
 
 ---
 
 ### 🧳 2. **Solo**
 
 * **Name**: Lisa
-* **Herkunft**: Amsterdam, Niederlande
+* **Herkunft**: Seattle, USA
 * **Beruf**: UX-Designerin
 * **Gender**: Weiblich
 * **Hobby**: Alleinreisen, Yoga-Retreats
 * **Beschreibung**:
 
-  > Lisa ist eine kreative Einzelreisende. Sie liebt es, neue Orte allein zu entdecken und bevorzugt ruhige Unterkünfte mit flexibler Stornierung. Ihre Buchungen sind gut geplant, aber manchmal spontan.
+  > Lisa ist eine kreative Einzelreisende aus Seattle. Sie liebt es, neue Orte allein zu entdecken und bevorzugt ruhige Unterkünfte mit flexibler Stornierung. Ihre Buchungen sind gut geplant, aber manchmal spontan.
 
 ---
 
 ### 👩‍❤️‍👨 3. **Couple**
 
 * **Name**: Matteo
-* **Herkunft**: Mailand, Italien
+* **Herkunft**: Vancouver, Kanada
 * **Beruf**: Innenarchitekt
 * **Gender**: Männlich
 * **Hobby**: Boutique-Hotels entdecken mit seiner Frau
@@ -210,7 +210,7 @@ Hier ist eine **erweiterte Segmentbeschreibung** für jedes deiner sieben Segmen
 ### 👨‍👩‍👧‍👦 4. **Family**
 
 * **Name**: Anna
-* **Herkunft**: Kopenhagen, Dänemark
+* **Herkunft**: Toronto, Kanada
 * **Beruf**: Grundschullehrerin
 * **Gender**: Weiblich
 * **Hobby**: Familienurlaube planen
@@ -223,7 +223,7 @@ Hier ist eine **erweiterte Segmentbeschreibung** für jedes deiner sieben Segmen
 ### 🧑‍🤝‍🧑 5. **Groups**
 
 * **Name**: Karim
-* **Herkunft**: Brüssel, Belgien
+* **Herkunft**: Chicago, USA
 * **Beruf**: Eventmanager
 * **Gender**: Männlich
 * **Hobby**: Gruppenreisen organisieren
@@ -249,7 +249,7 @@ Hier ist eine **erweiterte Segmentbeschreibung** für jedes deiner sieben Segmen
 ### 🌀 7. **Other**
 
 * **Name**: Alex
-* **Herkunft**: Prag, Tschechien
+* **Herkunft**: Portland, USA
 * **Beruf**: Freelancer
 * **Gender**: Divers
 * **Hobby**: Spontane Trips & Hidden Gems entdecken
@@ -445,7 +445,7 @@ ORDER BY b.user_id;
 **Zielpublikum:**
 
 * **Primär:** Elena Tarrant (Head of Marketing) – nicht-technisch, optimistisch und zukunftsorientiert
-* **Sekundär:** Technische Kolleg\:innen – detaillierte Kommentierung in SQL- und Python-Scripts, Dokumentation für Reproduzierbarkeit
+* **Sekundär:** Technische Kolleg:innen – detaillierte Kommentierung in SQL- und Python-Scripts, Dokumentation für Reproduzierbarkeit
 
 ## 2. Projektstruktur und Deliverables
 

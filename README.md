@@ -634,17 +634,9 @@ Hier sehen wir, wie viele Kunden in den einzelnen Segmenten vertreten sind – s
 Besonders auffällig: Die meisten Kunden gehören zu den Segmenten „Groups“, „Frequent Traveler“ und „Family“.
 Die kleineren Segmente „Other“ und „Solo“ spielen eine untergeordnete Rolle und werden in der weiteren Ansprache weniger stark berücksichtigt.
 
-###Folie 13: Wichtige KPIs je Segment
+### Folie 13: Wichtige KPIs je Segment
 
-Für jedes Kundensegment betrachten wir zentrale Kennzahlen, um die Ansprache noch gezielter zu steuern. Dazu gehören:
-
-Durchschnittliche Vorbuchungszeit (Lead Time) für Hotels: Wie früh buchen unsere Kunden?
-
-Gesamtausgaben für Hotels: Wie viel wird durchschnittlich pro Segment ausgegeben?
-
-Anzahl der Reisen: Wie reisefreudig ist das Segment?
-
-Diese Kennzahlen zeigen uns, welche Segmente kurzfristig oder langfristig planen, wie viel sie ausgeben und welche Vorteile für sie besonders relevant sind. Die Auswertung und Visualisierung erfolgt fortlaufend in Tableau.
+Der Customer Lifetime Value (CLV) misst den erwarteten Gesamtumsatz pro Kunde anhand bereinigter Hotel-Ausgaben und Buchungs-häufigkeit seit Januar 2023. Frequent Traveler stehen mit über 160 USD Ausgaben an der Spitze, Geschäftsreisende profitieren von Upgrades und Frühstück, Gruppen und Familien von Kombi-Perks wie „1 Kind reist kostenlos“. Mit dem fortlaufend aktualisierten CLV-Dashboard in Tableau steuern wir unsere Marketingkampagnen dynamisch und bieten Vielreisenden flexible Stornierungsbedingungen sowie Gruppen und Familien maßgeschneiderte Paketangebote.
 
 ### Folie 14: Perks & A/B-Tests – So setzen wir Personalisierung um
 
@@ -660,14 +652,14 @@ Keine Stornogebühren
 
 Exklusive Rabatte
 
-Die Auswahl des Perks wird individuell auf das jeweilige Segment zugeschnitten. Über segmentierte E-Mail-Kampagnen mit dynamischem Content sprechen wir jeden Kunden gezielt mit dem wichtigsten Vorteil an.
-Um den besten Effekt zu erzielen, testen wir verschiedene Varianten – zum Beispiel „kostenlose Stornierung“ gegen „Zimmer-Upgrade“ – in regelmäßigen A/B-Tests. So finden wir heraus, welche Ansprache in welchem Segment am besten funktioniert.
+
 
 ### Folie 15: Technische Umsetzung & Controlling
 
-Die technische Umsetzung erfolgt automatisiert:
+Die Auswahl des Perks wird individuell auf das jeweilige Segment zugeschnitten. Über segmentierte E-Mail-Kampagnen mit dynamischem Content sprechen wir jeden Kunden gezielt mit dem wichtigsten Vorteil an.
+Um den besten Effekt zu erzielen, testen wir verschiedene Varianten – zum Beispiel „kostenlose Stornierung“ gegen „Zimmer-Upgrade“ – in regelmäßigen A/B-Tests. So finden wir heraus, welche Ansprache in welchem Segment am besten funktioniert.Die technische Umsetzung erfolgt automatisiert:
 
-Die Segmentierungsdaten und Perk-Zuweisungen fließen direkt in unser E-Mail-Marketing-System und in Tableau.
+Die Segmentierungsdaten und Perk-Zuweisungen fließen direkt über die Datenbank in unser E-Mail-Marketing-System und in Tableau.
 
 Alle Kampagnen werden kontinuierlich überwacht. Wichtige KPIs sind Anmelderaten, Conversion Rates und langfristige Kundenbindung.
 

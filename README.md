@@ -1,3 +1,90 @@
+# TravelTide Rewards Program
+
+## Executive Summary
+
+TravelTide Rewards Program – Executive Summary
+TravelTide ist ein innovatives E-Booking-Startup mit starkem Datenfokus, das nach der Pandemie schnell gewachsen ist. Trotz Wachstum bleiben viele Kunden Einmalbucher – Wiederkehr und Kundenbindung sind zentrale Herausforderungen. Elena Tarrant, neue Head of Marketing, möchte mit einem personalisierten Rewards-Programm gezielt die Bindung stärken.
+Projektziel:
+ Jeder Kunde soll den für ihn attraktivsten Vorteil (“Perk”) erhalten und so eher zum Rewards-Programm motiviert werden. Die Personalisierung basiert auf echten Buchungs- und Verhaltensdaten.
+
+1. Daten & Methodik
+Datenquellen: Buchungs-, Kunden- und Transaktionsdaten aus Flügen, Hotels & Extras.
+
+
+Aufbereitung: Fehlende Werte bereinigt, Stornos gekennzeichnet, Daten anonymisiert.
+
+
+Feature Engineering: Kennzahlen wie Buchungshäufigkeit, Stornoquote, Ausgaben, Lead Time u.a. berechnet.
+
+
+Segmentierung: Clustering & regelbasiertes Mapping zu sieben klaren Kundensegmenten (Personas).
+
+
+Scoring: Jedem Kunden wurde über einen Score ein favorisierter Perk zugeordnet (z.B. kostenlose Stornierung, Upgrades, Gruppenrabatt etc.).
+
+
+
+2. Kundensegmente & Perk-Zuordnung
+Beispiel-Segmente:
+Business Traveler: Komfort & Flexibilität, Perk: Schnelle Stornierung/Umbuchung.
+
+
+Solo Traveler: Flexibel & unabhängig, Perk: Gratis-Storno, exklusive Einzelrabatte.
+
+
+Couple, Family, Groups, Frequent Traveler, Other: Jeweils mit eigenen, datenbasiert wichtigsten Perks und zugeschnittener Ansprache.
+
+
+Kernaussage:
+ Die Segmente zeigen deutliche Vorlieben, z.B. >30% bevorzugen kostenlose Stornierung, 25% Upgrades, 20% Bonuspunkte, Rest verteilt auf Rabatte & Mystery-Perks (Silhouette-Score > 0,6 für gute Cluster-Qualität).
+
+3. Empfehlungen & Umsetzung
+E-Mail-Kampagnen: Personalisierter Content je Favorite Perk, automatisiert ausgespielt.
+
+
+A/B-Tests: Verschiedene Perks gegeneinander testen, Erfolgskennzahlen messen (Öffnungs-, Klick-, Conversionrate).
+
+
+Monitoring: Tableau-Dashboards für CLV, Anmelderaten, Segment-Performance, monatliche Reviews.
+
+
+Technik: Anbindung an Marketing Automation (Mailchimp o.ä.), nahtlose Integration von Segment-/Perk-Daten.
+
+
+
+4. Ergebnisse & Ausblick
+Mehrwert: Personalisierte Ansprache motiviert nachweislich zur Anmeldung – stützt Elenas Hypothese.
+
+
+Potenzial: Stärkere Kundenbindung und Steigerung des Customer Lifetime Value (CLV) durch datengestützte Individualisierung.
+
+
+Nächste Schritte: Feintuning, Monitoring, fortlaufende Optimierung der Perk-Zuordnung & Kampagnen.
+
+
+
+Fazit:
+ Die datenbasierte Segmentierung und gezielte Perk-Zuweisung sind der Schlüssel für ein erfolgreiches Rewards-Programm. Die Erkenntnisse liefern sowohl Marketing als auch Data/IT die Basis, um Kundenbindung strukturiert, skalierbar und nachweisbar zu erhöhen.
+TravelTide Rewards Slides
+
+
+## Project Steps
+1. Data cleaning & feature engineering (SQL/Python)
+2. Segmentation & scoring (Decision Tree, Clustering)
+3. Mapping of perks per segment
+4. Personalized campaign design (A/B Testing)
+5. Dashboarding & monitoring (Tableau)
+6. Continuous improvement
+
+## Main Deliverables
+- Segmentiertedatenbank (SQL, .csv)
+- Visualisierung & KPIs (Tableau)
+- Präsentation & Report (README, Slides, Video)
+
+## Contact
+Project Lead: Elena Tarrant, Data: Matthias Siebert
+
+
 # TravelTide
 Find the right perks after customer segmentation
 

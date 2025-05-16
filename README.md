@@ -537,30 +537,29 @@ ORDER BY b.user_id;
 
 ## Folie 1: Titel & Begrüßung
 
-Guten Tag zusammen, mein Name ist Matthias und ich bin Datenanalyst bei TravelTide. Es freut mich sehr, Ihnen heute einen tiefen Einblick in unsere datengetriebene Arbeitsweise zu geben und zu zeigen, wie wir ein neues, personalisiertes Rewards-Programm entwickeln, das direkt auf die Bedürfnisse und Wünsche unserer Kundinnen und Kunden zugeschnitten ist. Ziel meiner Präsentation ist es, die Entstehung, Analyse und Umsetzung dieses Programms verständlich und praxisnah darzustellen und Ihnen dabei auch die Bedeutung unserer Segmentierungsarbeit näherzubringen.
+Hallo zusammen,
+mein Name ist Matthias und ich arbeite als Datenanalyst bei TravelTide. Ich freue mich, Ihnen heute zu zeigen, wie wir mit Daten arbeiten und wie daraus unser neues Rewards-Programm entsteht. Dieses Programm soll genau das bieten, was unsere Kundinnen und Kunden sich wünschen.
+In meiner Präsentation möchte ich Ihnen einfach erklären, wie wir das Programm geplant, analysiert und umgesetzt haben – und warum die Aufteilung unserer Kunden in verschiedene Gruppen dafür so wichtig ist.
+
 
 ## Folie 2: Welcome to TravelTide / Herausforderungen & Zielsetzung
 
-TravelTide ist ein dynamisches, innovatives E-Booking-Startup, das am Ende der Corona-Pandemie gegründet wurde – genauer gesagt im April 2021. Unsere große Stärke liegt darin, das größte und vielfältigste Reiseinventar im Markt zu bieten. Wir ermöglichen mit unserer hochmodernen Suchtechnologie eine besonders einfache und schnelle Buchungserfahrung. Das schätzen unsere Kunden und das bestätigen auch unabhängige Analysten der Reisebranche. Unsere Plattform wächst stetig und wir sind stolz, durch konsequente Datenaggregation und eine moderne technische Infrastruktur unseren Nutzern einen echten Mehrwert zu bieten.
+TravelTide ist ein junges und modernes Online-Unternehmen für Reisen. Wir wurden im April 2021, nach der Corona-Zeit, gegründet. Unsere große Stärke ist das Sie bei uns die größte Auswahl an Reisen finden. Mit unserer schnellen Suchfunktion können unsere Kunden ganz einfach und schnell buchen. Das gefällt unseren Kunden und auch Reise-Experten sagen, dass wir sehr gut sind. Unsere Plattform wird immer größer, weil wir viele Daten sammeln und die Technik immer besser machen.
 
-Unsere starke Fokussierung auf die Erweiterung unseres Reiseinventars hatte aber auch einen Preis: Die Kundenbindung und das gezielte Kundenerlebnis blieben bislang teilweise auf der Strecke. Die Folge: Unsere Kundinnen und Kunden nutzen das breite Angebot, kommen aber oft nicht dauerhaft zurück. Unser CEO Kevin Talanick hat daher eine klare Entscheidung getroffen. Er möchte die Kundenbindung strategisch stärken – mit einer Marketingstrategie, die sich auf datenbasierte Einblicke und tiefes Kundenverständnis stützt. Das Ziel ist es, nicht nur Neukunden zu gewinnen, sondern die bestehenden Kunden gezielt und nachhaltig an TravelTide zu binden.
+Bis jetzt haben wir uns vor allem darauf konzentriert, unser Angebot immer weiter zu vergrößern. Dadurch haben wir aber zu wenig darauf geachtet, dass unsere Kunden gerne zurückkommen. Viele buchen bei uns – aber viele kommen nicht wieder.
+Unser CEO Kevin Talanick hat deshalb entschieden: Wir wollen, dass mehr Kunden bei uns bleiben. Dafür brauchen wir ein Marketing, das die Kunden und ihre Wünsche besser versteht – und das mit Hilfe von Daten. Unser Ziel ist es jetzt, nicht nur neue Kunden zu bekommen, sondern unsere bisherigen Kunden glücklich zu machen und an TravelTide zu binden.
 
 ## Folie 3: Neue Marketingchefin Elena Tarrant / Aufgabe der Analytics /  Hypothese & Mock-Ups / Vorgehen und Methodik 
 
-Dafür wurde Elena Tarrant als neue Head of Marketing an Bord geholt. Elena gilt in der Branche als ausgewiesene Expertin für Kundenbindungsprogramme und innovative Rewards-Konzepte. Ihre Aufgabe ist es, ein modernes, personalisiertes Rewards-Programm zu entwerfen und umzusetzen, das einen echten Mehrwert für unsere Kunden bietet und sie dazu motiviert, regelmäßig auf TravelTide zurückzukommen. Damit dies gelingt, arbeitet Elena von Anfang an eng mit uns aus der Datenanalyse zusammen – denn ohne belastbare Insights lässt sich keine echte Personalisierung schaffen.
+Elena Tarrant ist unsere neue Marketing-Chefin. Sie soll ein besonderes Bonus-Programm für TravelTide entwickeln, das auf jeden Kunden passt. Das Ziel ist, dass unsere Kunden mehr Vorteile bekommen und öfter zu uns zurückkommen. Dafür schauen wir uns genau an, was unsere Kunden mögen und wie sie buchen.
 
-Das Projekt ist ein Paradebeispiel für die enge Zusammenarbeit von Marketing und Data Team. Unsere Aufgabe als Analytics-Team ist es, auf Basis großer Datenmengen das Verhalten, die Vorlieben und die Wünsche unserer Nutzer zu analysieren und Elena so fundierte Empfehlungen für die Ansprache und die Struktur des Rewards-Programms zu liefern. Wir nutzen dazu fortschrittliche Tools wie SQL für die Datenbankabfragen, Python in Google Colab für explorative Analysen und Machine Learning, sowie Tableau für die visuelle Aufbereitung und das Dashboarding. Unser Ziel: Personalisierung, die auf Fakten basiert und wirklich Wirkung zeigt. 
+Das Marketing-Team und das Daten-Team arbeiten dafür eng zusammen. Wir als Daten-Team schauen uns die Daten an und sagen, welche Vorteile für welche Kunden am wichtigsten sind. Dafür nutzen wir Programme wie SQL, Python und Tableau, um aus den Daten Gruppen von ähnlichen Kunden zu finden.
 
-Bei dieser Analyse haben wir die Daten zunächst intensiv bereinigt und vorbereitet: Mit SQL wurden alle Null-Werte entfernt, sodass wir eine saubere Datenbasis hatten. Wir haben zudem nur Sessions berücksichtigt, deren session\_start nach dem 04.01.2023 lag, und sämtliche negativen Nächte (negative Übernachtungswerte) ausgeschlossen. Zusätzlich wurden stornierte Buchungen systematisch entfernt, um die Analyse nicht zu verzerren. Für die Segmentierung kam eine verschachtelte CASE WHEN-Expression zum Einsatz, mit der wir mehrere entscheidende Merkmale direkt im SQL-Code auswerten konnten: die durchschnittliche Anzahl gebuchter Sitzplätze (avg\_flight\_seats), den Familienstand (married), ob Kinder vorhanden sind (has\_children), die durchschnittliche Sessiondauer, die Buchungsfrequenz und die Höhe der Hotel-Ausgaben. Auf Basis dieser Dimensionen haben wir verschiedene Segmente gebildet und daraus Personas abgeleitet, die typische Kundengruppen und ihr Reiseverhalten repräsentieren.
+Bei der Datenaufbereitung haben wir Fehler und unnötige Werte entfernt, nur Buchungen ab dem 4. Januar 2023 genommen und negative Übernachtungen ausgeschlossen. Mit bestimmten Regeln in SQL teilen wir die Kunden in Gruppen ein, zum Beispiel: verheiratet oder nicht, mit oder ohne Kinder, wie oft sie buchen und wie viel sie für Hotels ausgeben.
 
-Elena hat die Hypothese aufgestellt, dass es die Conversion-Raten massiv erhöht, wenn wir bei der Einladung zum Rewards-Programm genau den Vorteil (Perk) in den Vordergrund stellen, der dem einzelnen Kunden am wichtigsten erscheint. Dazu hat sie zwei E-Mail-Entwürfe erstellt: Einer ist generisch und listet alle Vorteile gleichwertig auf, der andere hebt einen spezifischen Haupt-Perk, zum Beispiel „kostenlose Stornierung“, gezielt hervor. Unsere Analysen belegen: Die gezielte, personalisierte Ansprache kommt deutlich besser an und erhöht die Wahrscheinlichkeit einer Anmeldung erheblich. Genau darauf richten wir unsere Segmentierung und die weitere Personalisierung aus.
+Elena glaubt: Wenn wir jedem Kunden das anbieten, was ihm am wichtigsten ist, melden sich mehr Leute für das Bonus-Programm an. Unsere Daten zeigen: Eine persönliche Ansprache ist wirklich besser als eine allgemeine Nachricht an alle.
 
-Unser Analyseprozess besteht aus zwei wesentlichen Aufgaben:
-
-1. Zunächst prüfen wir, ob es in unseren Daten tatsächlich klar unterscheidbare Kundensegmente mit unterschiedlichen Präferenzen für bestimmte Rewards gibt. Das bedeutet, wir identifizieren mithilfe von Data Mining und Clustering verschiedene Nutzertypen.
-2. Im nächsten Schritt ordnen wir jedem Kunden individuell den wahrscheinlich beliebtesten Perk zu – auf Basis von Verhaltensdaten, Buchungshistorie und Vorlieben. Diese Insights werden dann an das Marketing weitergegeben, das damit die Personalisierung der Ansprache umsetzt.
-
-Für die Analyse kommen SQL, Python, Machine-Learning-Methoden und anschauliche Tableau-Dashboards zum Einsatz. Damit sorgen wir dafür, dass sowohl die Geschäftsführung als auch das Marketingteam die Ergebnisse intuitiv erfassen und direkt nutzen können.
+So kann unser Marketing-Team jeden Kunden ganz gezielt ansprechen. Die Ergebnisse zeigen wir in Berichten und Dashboards, damit sie einfach genutzt werden können.
 
 ## Folie 4: Segmentierung – Die 7 Personas
 
@@ -610,7 +609,7 @@ Das Rewards-Programm von TravelTide bietet Gruppenreisenden wie Karim spezielle 
 
 ### Folie 9: Frequent Traveler – Emily
 
-Emily ist 32 Jahre alt und lebt als Digital Nomad. Ihr Lebensmittelpunkt ist New York City, aber eigentlich ist sie überall auf der Welt unterwegs. Ihre Arbeit im Bereich IT und Consulting erlaubt ihr, von überall zu arbeiten – heute Paris, nächste Woche Lissabon. Für Emily zählen Flexibilität, Geschwindigkeit und Belohnungen für Vielbucher. Sie bucht oft und erwartet besondere Benefits wie ein kostenloses Gepäckstück, exklusive Rabatte und Treuepunkte, die sie flexibel einlösen kann.
+Emily ist 32 Jahre alt und lebt als Digitaler Nomade. Ihr Lebensmittelpunkt ist New York City, aber eigentlich ist sie überall auf der Welt unterwegs. Ihre Arbeit im Bereich IT und Consulting erlaubt ihr, von überall zu arbeiten – heute Paris, nächste Woche Lissabon. Für Emily zählen Flexibilität, Geschwindigkeit und Belohnungen für Vielbucher. Sie bucht oft und erwartet besondere Benefits wie ein kostenloses Gepäckstück, exklusive Rabatte und Treuepunkte, die sie flexibel einlösen kann.
 
 Das Rewards-Programm für Vielreisende wie Emily setzt auf schnelle Buchungsprozesse, spezielle Vielbucher-Angebote, Upgrades und Zugang zu besonderen Services wie Lounges oder Late-Check-Outs. Die Kommunikation ist international, dynamisch und auf ein urbanes, flexibles Publikum ausgerichtet.
 
@@ -624,45 +623,60 @@ Das Rewards-Programm spricht diese Zielgruppe mit ständig wechselnden Spezialde
 
 ---
 
-## Folie 10: Datengetriebene Personalisierung
+### Folie 11: Struktur der Kundensegmente
 
-Unsere detaillierte Segmentierung ist die Grundlage für die datengetriebene Personalisierung im gesamten Rewards-Programm. Die Zuweisung des wahrscheinlich beliebtesten Rewards-Perks pro Kunde erfolgt vollautomatisch, indem wir das bisherige Buchungsverhalten, Präferenzen und besondere Anlässe berücksichtigen. Dadurch bekommt jede und jeder genau die Belohnung, die am attraktivsten ist – und das erhöht die Motivation zur Teilnahme und Nutzung des Programms erheblich.
+Unsere Segmentierung ist die Grundlage für die Personalisierung im Rewards-Programm. Jeder Kunde wird automatisch einem Segment zugeordnet – zum Beispiel Business, Solo, Couple, Family, Groups, Frequent Traveler oder Other. Die Zuordnung basiert auf Buchungsverhalten, Vorlieben und speziellen Bedürfnissen.
+So kann jedem Kunden genau der Vorteil angeboten werden, der für ihn am attraktivsten ist. Das erhöht die Motivation, am Rewards-Programm teilzunehmen, und steigert die Nutzung.
 
-## Folie 11: Struktur der Kundensegmente
+### Folie 12: Kundenanzahl pro Segment und in Prozent
 
-Die Struktur unserer Kundensegmente ist ein zentraler Bestandteil der Strategie für das TravelTide Rewards-Programm. Prozentual setzen sich die Segmente wie folgt zusammen (Details können als Diagramm visualisiert werden):
+Hier sehen wir, wie viele Kunden in den einzelnen Segmenten vertreten sind – sowohl als absolute Zahl als auch prozentual.
+Besonders auffällig: Die meisten Kunden gehören zu den Segmenten „Groups“, „Frequent Traveler“ und „Family“.
+Die kleineren Segmente „Other“ und „Solo“ spielen eine untergeordnete Rolle und werden in der weiteren Ansprache weniger stark berücksichtigt.
 
-* Jedes Segment unterscheidet sich hinsichtlich des durchschnittlichen Buchungsverhaltens, des Gesamtumsatzes und der Vorbuchungszeit (Lead Time) bei Hotelbuchungen. Besonders interessant sind hierbei folgende KPIs:
+###Folie 13: Wichtige KPIs je Segment
 
-  * **Durchschnittliche Lead Time Hotel (in Tagen):** Wie früh vor der Reise buchen die Kund\:innen ihr Hotel?
-  * **Gesamtausgaben Hotel (total money spent hotel):** Wie hoch ist der durchschnittliche Umsatz pro Segment?
-  * **Gesamtanzahl der Reisen (total number of trips):** Wie reisefreudig ist das jeweilige Segment?
+Für jedes Kundensegment betrachten wir zentrale Kennzahlen, um die Ansprache noch gezielter zu steuern. Dazu gehören:
 
-Diese Kennzahlen ermöglichen es uns, gezielt die Segmente mit den jeweils passenden Perks und Kampagnen anzusprechen. Die Daten zeigen beispielsweise, dass Segmente mit hoher Buchungsfrequenz andere Vorteile bevorzugen als Gelegenheitsbucher mit langer Vorlaufzeit.
+Durchschnittliche Vorbuchungszeit (Lead Time) für Hotels: Wie früh buchen unsere Kunden?
 
-Die Segmentgröße und das Verhalten werden fortlaufend in Tableau visualisiert und analysiert, sodass wir Trends frühzeitig erkennen und darauf reagieren können.
+Gesamtausgaben für Hotels: Wie viel wird durchschnittlich pro Segment ausgegeben?
 
-## Folie 15: Umsetzung & Ausblick
+Anzahl der Reisen: Wie reisefreudig ist das Segment?
 
-Zur Realisierung der personalisierten Rewards-Kommunikation setzen wir auf die Integration moderner Marketing-Automation-Systeme. Die Kunden-Segmente und Perk-Zuweisungen werden direkt in unsere E-Mail-Marketing-Plattform überführt, sodass dynamischer Content – also der jeweils passende Haupt-Perk – für jede Kund\:in individuell ausgespielt werden kann. Über eine direkte Tableau-Integration stellen wir sicher, dass die Ergebnisse der Analysen laufend überwacht und in Dashboards für Marketing und Management visualisiert werden.
+Diese Kennzahlen zeigen uns, welche Segmente kurzfristig oder langfristig planen, wie viel sie ausgeben und welche Vorteile für sie besonders relevant sind. Die Auswertung und Visualisierung erfolgt fortlaufend in Tableau.
 
-Die Ausspielung erfolgt segmentiert und wird über verschiedene Varianten getestet, z. B. mit Fokus auf „kostenlose Stornierung“, „Zimmer-Upgrade“ oder Treuepunkte. Hierfür werden regelmäßig A/B-Tests durchgeführt, um herauszufinden, welcher Perk in welchem Segment die höchste Conversion erzielt.
+### Folie 14: Perks & A/B-Tests – So setzen wir Personalisierung um
 
-Für jedes Kundensegment werden eigene, individualisierte E-Mail-Kampagnen erstellt. Der Haupt-Perk (z. B. kostenlose Hotelmahlzeit, kein Stornogebühr, exklusive Rabatte etc.) steht im Mittelpunkt der Botschaft. So sprechen wir gezielt die Bedürfnisse und Wünsche der verschiedenen Kundengruppen an und erhöhen die Wahrscheinlichkeit einer Rewards-Programm-Anmeldung deutlich.
+Für jedes Segment haben wir die passenden Rewards-Perks identifiziert, wie zum Beispiel:
 
-Mittels dynamischer E-Mail-Inhalte wird der für die Zielperson am attraktivsten wirkende Perk automatisch in der Betreffzeile und im E-Mail-Body hervorgehoben.
+Kostenlose Hotelmahlzeit
 
-Die Wirkung unterschiedlicher Perks und Kommunikationsstrategien wird laufend getestet. Varianten wie „kostenlose Stornierung“, „Zimmer-Upgrade“ oder Treuepunkte werden je nach Segment gegeneinander geprüft und die beste Option fortlaufend ausgespielt.
+Kostenloses Aufgabegepäck
 
-## Folie 16: Technische Umsetzung & Controlling
+Keine Stornogebühren
 
-Die technische Umsetzung erfolgt über ein automatisiertes Marketing-System, das direkt mit unseren Segmentierungsdaten und der Analyse aus Tableau verbunden ist. Dadurch können neue Segmentierungen und Insights in Echtzeit in laufende Kampagnen einfließen.
+1 Nacht kostenloses Hotelzimmer bei Flugbuchung
 
-Die Kampagnen werden durch Dashboards permanent überwacht. Zu den wichtigsten KPIs zählen Anmelderaten, Conversion Rates, Segment-Performance und langfristige Retention. Über regelmäßige Reviews und Audits stellen wir sicher, dass das Programm nachhaltig wirkt und weiter optimiert wird.
+Exklusive Rabatte
 
-Die Ausspielung erfolgt segmentiert und wird über verschiedene Varianten getestet, z. B. mit Fokus auf „kostenlose Stornierung“, „Zimmer-Upgrade“ oder Treuepunkte. Hierfür werden regelmäßig A/B-Tests durchgeführt, um herauszufinden, welcher Perk in welchem Segment die höchste Conversion erzielt.
+Die Auswahl des Perks wird individuell auf das jeweilige Segment zugeschnitten. Über segmentierte E-Mail-Kampagnen mit dynamischem Content sprechen wir jeden Kunden gezielt mit dem wichtigsten Vorteil an.
+Um den besten Effekt zu erzielen, testen wir verschiedene Varianten – zum Beispiel „kostenlose Stornierung“ gegen „Zimmer-Upgrade“ – in regelmäßigen A/B-Tests. So finden wir heraus, welche Ansprache in welchem Segment am besten funktioniert.
 
-## Folie 17: Q & A
+### Folie 15: Technische Umsetzung & Controlling
+
+Die technische Umsetzung erfolgt automatisiert:
+
+Die Segmentierungsdaten und Perk-Zuweisungen fließen direkt in unser E-Mail-Marketing-System und in Tableau.
+
+Alle Kampagnen werden kontinuierlich überwacht. Wichtige KPIs sind Anmelderaten, Conversion Rates und langfristige Kundenbindung.
+
+Über Dashboards und regelmäßige Audits sorgen wir dafür, dass das Rewards-Programm stetig optimiert wird.
+
+So stellen wir sicher, dass Personalisierung nicht nur ein Buzzword bleibt, sondern wirklich funktioniert und echten Mehrwert für unsere Kunden und TravelTide schafft.
+
+
+## Folie 16: Q & A
 
 Ich bedanke mich für Ihre Aufmerksamkeit. Gerne beantworte ich jetzt Ihre Fragen zu allen Themen rund um unser Rewards-Programm, die Segmentierung, Personalisierung oder die technische Umsetzung. Lassen Sie uns diskutieren, wie datengetriebene Personalisierung und Automatisierung echten Mehrwert für TravelTide und unsere Kund\:innen schaffen!
 
